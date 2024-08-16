@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-optical-sizing: auto;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background: #111111;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+
+
+
+
+.hamburger .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #eae7e7;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+a {
+    text-decoration: none;
+    color: #eae7e7;
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+.navbar {
+    width: 100%;
+    background-color: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+    padding: 2px 0 16px 2px;
+
+
+}
+
+.logo {
+    color: red;
+    cursor: pointer;
+}
+
+.logo p {
+    font-size: 2.2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    height: 2rem;
+    line-height: 7rem;
+    margin-left: 9rem;
+    font-style: italic;
+}
+
+.navbar-items {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.navbar-items ul {
+    width: 35%;
+    list-style: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 21.6px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+    border-radius: 20rem;
+    border: 1px solid rgba(121, 121, 121, 0.849);
+}
+
+.item {
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 21%;
+    text-align: center;
+    margin: 0.2rem;
+}
+
+.item:hover {
+    background-color: #E6533C;
+    border-radius: 46px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    position: relative;
+}
+
+
+
+
+.hero {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 4.5rem;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 35%;
+    font-weight: 800;
+}
+
+.italic {
+    font-family: 'Miama', sans-serif;
+}
+
+.sub-title {
+    width: 36%;
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+.btn-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 20%;
+    left: -27%;
+}
+
+.join,
+.download {
+    background: rgba(38, 38, 41, 0.904);
+    border-radius: 46px;
+    text-align: center;
+    padding: 12px 35px 12px 25px;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid rgba(121, 121, 121, 0.849);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.join-now {
+    background: rgba(38, 38, 41, 0.904);
+    border-radius: 46px;
+    text-align: center;
+    padding: 13px 60px 15px 45px;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid rgba(121, 121, 121, 0.849);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.join:hover,
+.download:hover,
+.join-now:hover {
+    background-color: #E6533C;
+}
+
+.header-imge {
+    position: relative;
+    left: -10%;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.tutorial,
+.workout {
+    width: 15%;
+    border: 1px solid #c7bcd747;
+    border-radius: 20px;
+    background: #c7bcd747;
+    box-shadow: 2px 3px #c7bcd747, inset 2px 3px #c7bcd747;
+    margin: 20px 19px 20px 20px;
+    padding: 26px 22px 26px 22px;
+}
+
+.tutorial {
+    position: absolute;
+    left: 52%;
+    top: 72%;
+}
+
+.workout {
+    position: absolute;
+    left: 78%;
+    top: 30%;
+}
+
+.container::after {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    content: '';
+    background-color: #E6533C;
+    position: relative;
+    left: -41.4%;
+    top: 22.5%;
+    margin-right: 1rem;
+}
+
+.noClass,
+.tutorial-text {
+    text-align: center;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.tutorial-text {
+    font-weight: 200;
+    margin-left: 1rem;
+}
+
+
+.main-title {
+    text-align: center;
+    padding-top: 1.5rem;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+
+.sub {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    width: 70%;
+    margin-left: 15rem;
+    color: rgba(169, 166, 166, 0.704);
+}
+
+.section-box {
+    background: #000000;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    flex: 1 1 23%;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.box-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 10px 0;
+    font-family: "Inter", sans-serif;
+    color: white;
+
+}
+
+.box-text {
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: #666;
+}
+
+.section-benefits {
+    background-color: rgb(23, 23, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    max-width: 90%;
+    margin: 10rem;
+    border-radius: 30px;
+}
+
+.advantage-heading {
+    width: 100%;
+    padding: 2rem;
+}
+
+.advantage-heading h2 {
+    color: white;
+    width: 50%;
+    align-items: center;
+    position: relative;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+
+.advantage-sub {
+    font-size: 1.5rem;
+    width: 90%;
+    color: rgb(149, 145, 145);
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.advantage-image {
+    flex: 4 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.running {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 55px;
+    padding: 30px;
+}
+
+.section-training {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.heading-training {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    color: white;
+    line-height: 3rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+
+.sub-train {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: rgb(141, 138, 138);
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.training-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    max-width: 800px;
+    margin: 0 90px;
+}
+
+.img-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.exercise-images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.img-container:nth-child(1)::after,
+.img-container:nth-child(2)::after,
+.img-container:nth-child(3)::after,
+.img-container:nth-child(4)::after,
+.img-container:nth-child(5)::after,
+.img-container:nth-child(6)::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 29%;
+    opacity: 0;
+}
+
+.img-container:nth-child(1)::after {
+    background-color: rgba(22, 18, 236, 0.322);
+}
+
+.img-container:nth-child(2)::after {
+    background-color: rgba(7, 247, 255, 0.233);
+}
+
+.img-container:nth-child(3)::after {
+    background-color: rgba(7, 41, 236, 0.356);
+}
+
+.img-container:nth-child(4)::after {
+    background-color: rgba(230, 20, 230, 0.281);
+}
+
+.img-container:nth-child(5)::after {
+    background-color: rgba(250, 9, 29, 0.384);
+}
+
+.img-container:nth-child(6)::after {
+    background-color: rgba(12, 207, 197, 0.205);
+}
+
+.img-container:nth-child(1):hover::after,
+.img-container:nth-child(2):hover::after,
+.img-container:nth-child(3):hover::after,
+.img-container:nth-child(4):hover::after,
+.img-container:nth-child(5):hover::after,
+.img-container:nth-child(6):hover::after {
+    opacity: 1;
+}
+
+.txt1,
+.txt2,
+.txt3,
+.txt4,
+.txt5,
+.txt6 {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+}
+
+.txt1 {
+    left: 24%;
+}
+
+.bmi {
+    color: white;
+    margin-left: 12rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-family: "Inter", sans-serif;
+
+}
+
+.heading-bmi {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.sub-bmi {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    font-weight: 300;
+    color: rgb(163, 160, 160);
+}
+
+.section-chart {
+    background-color: #312f2f;
+    padding: 3rem;
+    color: white;
+}
+
+
+
+
+.chart-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.bmi-table {
+    width: 80%;
+
+}
+
+.table-heading {
+    font-size: 2rem;
+    margin-left: 10rem;
+    padding: 2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    width: 100%;
+}
+
+table {
+    border: 1px solid rgb(92, 89, 89);
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: 12rem;
+    margin-bottom: 2rem;
+}
+
+th,
+td {
+    border: 1px solid rgb(160, 155, 155);
+    padding: 15px;
+}
+
+
+
+
+.bmi-calculator {
+    padding: 10.2rem 0rem 5rem 0rem;
+
+}
+
+
+.calculator-heading {
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+
+.calculator-sub {
+    font-size: 1.2rem;
+    padding: 1px 2px 3px 4px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: rgb(147, 145, 145);
+}
+
+
+.user-inputs {
+    padding: 1rem 1rem 3rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+
+}
+
+
+#activity {
+    grid-column: span 2;
+}
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+
+
+input[type="number"],
+select {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(118, 115, 115);
+    color: #ccc;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+
+.calculate {
+    background-color: blue;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+
+/* SECTION TEAM */
+.section-team {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 4rem;
+}
+
+.team-heading,
+.team-sub {
+    text-align: center;
+    padding: 0.2rem;
+    font-family: "Inter", sans-serif;
+}
+
+.team-heading {
+    font-weight: 800;
+}
+
+.team-sub {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #3e3c3c;
+
+    border-radius: 30px;
+    max-width: 1200px;
+
+
+
+}
+
+.image-box {
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+.image-box:nth-child(1) {
+    width: 93%;
+    height: 82%;
+}
+
+
+.image-box:nth-child(2) {
+    width: 100%;
+    height: 81%;
+}
+
+
+
+.image-box:nth-child(3) {
+    width: 85%;
+    height: 81%;
+}
+
+
+
+
+.image-box:nth-child(4) {
+    width: 95%;
+    height: 80%;
+}
+
+.image-box:nth-child(5) {
+    width: 78%;
+    height: 83%;
+}
+
+.image-box:nth-child(6) {
+    width: 87%;
+    height: 80%;
+}
+
+.team-name h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.team-name p {
+    font-size: 1rem;
+    color: #dad4d4;
+}
+
+.team-images {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+
+}
+
+
+footer {
+    background-color: #1b1b1b;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.about {
+    width: 33.3%;
+    margin-top: 4rem;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5rem;
+
+}
+
+.title {
+    font-size: 2rem;
+    color: #E6533C;
+    padding: 0rem 0rem 1rem 0rem;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 2rem;
+}
+
+.get-started {
+    color: white;
+    padding: 2rem 3rem;
+    width: 33.3%;
+    margin-left: 10rem;
+}
+
+.title-started {
+    font-size: 2rem;
+    padding: 0rem 0rem 1rem 0rem;
+    line-height: 3rem;
+}
+
+.link {
+    text-decoration: none;
+    list-style: none;
+    padding: 0rem 0rem 1rem 0rem;
+    font-size: 1.2rem;
+}
+
+
+.services {
+    width: 33.3%;
+    margin-top: 1.9rem;
+    margin-left: 10rem;
+}
+
+.services-title {
+    font-size: 2rem;
+    padding: 0rem 0rem 2rem 0rem;
+    line-height: 2rem;
+}
+
+
+hr {
+    border: none;
+    background-color: rgb(54, 54, 54);
+    height: 2px;
+    width: 90%;
+    margin: 0rem 5rem;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1.2rem;
+}
