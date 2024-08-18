@@ -1,25 +1,30 @@
-/* Small devices (mobile) */
-@media (max-width: 600px) {
-    .hamburger {
-        display: flex;
-        position: fixed;
-        right: -80%;
-        top: 10%;
-        width: 100vw;
+@media only screen and (max-width: 480px) {
+    .btn-items {
+        position: static;
+        width: 67dvh;
+        height: 18dvh;
+        max-width: 800px;
     }
 
+
+
+
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 1rem;
+    }
 
     .active {
         display: block;
     }
-
 
     .hamburger .bar {
         z-index: 1;
     }
 
     header {
-
         padding: 1rem;
     }
 
@@ -34,12 +39,17 @@
         z-index: 1;
     }
 
+    .logo {
+        position: absolute;
+        top: 0;
 
-
+    }
 
 
     .logo p {
         margin-left: 0rem;
+
+
     }
 
 
@@ -72,13 +82,13 @@
 
     .container {
         display: inline-block;
-        padding: 1rem;
         position: relative;
 
     }
 
     .hero {
         position: static;
+        margin: 0;
         width: 60%;
         font-size: 3rem;
         max-width: 600px;
@@ -93,22 +103,28 @@
     }
 
 
-    .btn-items {
-        position: static;
-        width: 90dvh;
-        height: 18dvh;
-        max-width: 500px;
-    }
 
     .join,
     .download {
         padding: 15px 26px;
     }
 
+
+    .join {
+        position: absolute;
+        left: 0;
+    }
+
+    .download {
+        position: absolute;
+        left: 41%;
+    }
+
+
     .header-imge {
         max-width: 100%;
         width: 80dvh;
-        margin-left: auto;
+        margin-left: 1rem;
         margin-right: auto;
         position: static;
         align-items: center;
@@ -127,26 +143,10 @@
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .tutorial,
     .workout {
         margin-right: 2rem;
-        width: 45dvh;
+        width: 35dvh;
         position: absolute;
         left: 0;
     }
@@ -157,14 +157,16 @@
 
     .workout {
         top: -545px;
-        left: 270px;
+        left: 210px;
     }
 
     .container::after {
+        width: 45px;
+        height: 45px;
         display: block;
         margin: 20px auto;
         position: absolute;
-        top: 185%;
+        top: 179%;
         left: 25px;
     }
 
@@ -424,88 +426,2845 @@
 
 }
 
-
-
-@media (max-width: 500px) {
-    .workout {
-        position: relative;
-        left: 235px;
-    }
-
+@media only screen and (min-width:481px) and (max-width:527px) {
     .container::after {
+        width: 45px;
+        height: 45px;
         display: block;
         margin: 20px auto;
         position: absolute;
-        top: 200%;
-        left: 25px;
+        top: 182%;
+        left: 27px;
     }
+
+
+
+
+
+
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 1rem;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .hamburger .bar {
+        z-index: 1;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    .overlay {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+
+    }
+
+
+    .logo p {
+        margin-left: 0rem;
+    }
+
+
+
+
+    .navbar-items ul {
+        flex-direction: column;
+        height: 100vh;
+        line-height: 0;
+        align-items: center;
+        justify-content: space-around;
+        position: static;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        margin-left: 10rem;
+        padding-top: 3rem;
+        z-index: 1;
+    }
+
+    .item {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container {
+        display: inline-block;
+        padding: 1rem;
+        position: relative;
+
+    }
+
+    .hero {
+        position: static;
+        width: 60%;
+        font-size: 3rem;
+        max-width: 600px;
+        font-weight: 800;
+    }
+
+    .sub-title {
+        width: 80%;
+        position: static;
+        max-width: 800px;
+        margin-left: 1rem;
+    }
+
+
+    .btn-items {
+        position: static;
+        width: 70dvh;
+        height: 18dvh;
+        max-width: 500px;
+    }
+
+    .join,
+    .download {
+        padding: 15px 26px;
+    }
+
+    .header-imge {
+        max-width: 100%;
+        width: 80dvh;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        align-items: center;
+        height: 90dvh;
+
+    }
+
+    .banner-img {
+        object-fit: cover;
+        margin-top: 5rem;
+    }
+
+    .content-wrapper {
+
+        position: relative;
+
+    }
+
+    .tutorial,
+    .workout {
+        margin-right: 2rem;
+        width: 35dvh;
+        position: absolute;
+        left: 0;
+    }
+
+    .tutorial {
+        top: -250px;
+    }
+
+    .workout {
+        top: -545px;
+        left: 215px;
+    }
+
+
+    .main-title {
+        padding-top: 0.5rem;
+        max-width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .sub {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .box {
+        flex: 1 1 100%;
+        max-width: 300px;
+        border-radius: 8px;
+    }
+
+    .box img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .section-benefits,
+    .section-training {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantage {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 3rem;
+    }
+
+    .advantage-heading h2 {
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .advantage-sub {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .advantage-image {
+        width: 100%;
+        max-width: 800px;
+
+    }
+
+    .running {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .section-training {
+        display: block;
+        padding: 1rem;
+    }
+
+    .heading-training {
+        font-size: 2rem;
+    }
+
+
+
+
+    .training-image {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+        gap: 1rem;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .img-container {
+        width: 100%;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        flex: 1 1 100%;
+    }
+
+    .exercise-images {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+
+
+
+    .img-container:nth-child(1)::after,
+    .img-container:nth-child(2)::after,
+    .img-container:nth-child(3)::after,
+    .img-container:nth-child(4)::after,
+    .img-container:nth-child(5)::after,
+    .img-container:nth-child(6)::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 80%;
+        opacity: 0;
+    }
+
+
+    .img-container:hover .exercise-images {
+        transform: scale(1.1);
+    }
+
+    .bmi {
+        margin: 0;
+    }
+
+    .heading-bmi {
+        padding: 0;
+    }
+
+
+    .sub-bmi {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .section-chart {
+        padding: 1rem;
+    }
+
+    .chart-container {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .bmi-table {
+        width: 100%;
+        max-width: 800px;
+        background-color: #444444;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+
+    .table-heading {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    table {
+        margin-left: 0;
+        display: inline-block;
+
+    }
+
+
+    .bmi-table th,
+    .bmi-table td {
+        padding: 10px;
+    }
+
+    .bmi-calculator {
+        padding: 1rem;
+    }
+
+    .calculator-sub {
+        padding: 1rem 0;
+    }
+
+
+
+    .section-team {
+        padding: 2rem;
+    }
+
+    .team-heading,
+    .team-sub {
+        padding: 0.5rem 0;
+    }
+
+
+    .team-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 800px;
+    }
+
+
+
+    .footer {
+        background-color: #111111;
+        padding: 2rem;
+        color: white;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer-container {
+        display: inline;
+        margin: 0;
+    }
+
+
+    .title {
+        padding: 1rem;
+    }
+
+    .subtitle {
+        padding: 1rem;
+    }
+
+
+    .get-started {
+
+        padding: 1rem;
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .services {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1.9rem;
+        margin-left: 0rem;
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-text {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (max-width: 768px) {
-        .navbar-items ul {
-            flex-direction: column;
-            align-items: center;
-            background: none;
-            border: none;
-        }
-
-        .navbar-items ul li {
-            margin: 1rem 0;
-        }
-
-        .hero {
-            font-size: 2.5rem;
-        }
-
-        .btn-items {
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .box,
-        .advantage {
-            width: 100%;
-            max-width: none;
-        }
+@media only screen and (min-width:528px) and (max-width: 653px) {
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 1rem;
     }
 
-    @media screen and (max-width: 480px) {
-        .hero {
-            font-size: 2rem;
-        }
-
-        .navbar-items ul {
-            display: none;
-        }
-
-        .hamburger {
-            display: flex;
-        }
+    .active {
+        display: block;
     }
 
+    .hamburger .bar {
+        z-index: 1;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    .overlay {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+
+    }
+
+
+    .logo p {
+        margin-left: 0rem;
+    }
+
+
+
+
+    .navbar-items ul {
+        flex-direction: column;
+        height: 100vh;
+        line-height: 0;
+        align-items: center;
+        justify-content: space-around;
+        position: static;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        margin-left: 10rem;
+        padding-top: 3rem;
+        z-index: 1;
+    }
+
+    .item {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container {
+        display: inline-block;
+        padding: 1rem;
+        position: relative;
+
+    }
+
+    .hero {
+        position: static;
+        width: 60%;
+        font-size: 3rem;
+        max-width: 600px;
+        font-weight: 800;
+    }
+
+    .sub-title {
+        width: 80%;
+        position: static;
+        max-width: 800px;
+        margin-left: 1rem;
+    }
+
+
+    .btn-items {
+        position: static;
+        width: 70dvh;
+        height: 18dvh;
+        max-width: 500px;
+    }
+
+    .join,
+    .download {
+        padding: 15px 26px;
+    }
+
+    .header-imge {
+        max-width: 100%;
+        width: 80dvh;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        align-items: center;
+        height: 90dvh;
+
+    }
+
+    .banner-img {
+        object-fit: cover;
+        margin-top: 5rem;
+    }
+
+    .content-wrapper {
+
+        position: relative;
+
+    }
+
+    .tutorial,
+    .workout {
+        margin-right: 2rem;
+        width: 35dvh;
+        position: absolute;
+        left: 0;
+    }
+
+    .tutorial {
+        top: -250px;
+        left: 5%;
+    }
+
+    .workout {
+        top: -545px;
+        left: 47%;
+    }
+
+    .container::after {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 20px auto;
+        position: absolute;
+        top: 168%;
+        left: 12dvh;
+    }
+
+    .main-title {
+        padding-top: 0.5rem;
+        max-width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .sub {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .box {
+        flex: 1 1 100%;
+        max-width: 300px;
+        border-radius: 8px;
+    }
+
+    .box img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .section-benefits,
+    .section-training {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantage {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 3rem;
+    }
+
+    .advantage-heading h2 {
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .advantage-sub {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .advantage-image {
+        width: 100%;
+        max-width: 800px;
+
+    }
+
+    .running {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .section-training {
+        display: block;
+        padding: 1rem;
+    }
+
+    .heading-training {
+        font-size: 2rem;
+    }
+
+
+
+
+    .training-image {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+        gap: 1rem;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .img-container {
+        width: 100%;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        flex: 1 1 100%;
+    }
+
+    .exercise-images {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+
+
+
+    .img-container:nth-child(1)::after,
+    .img-container:nth-child(2)::after,
+    .img-container:nth-child(3)::after,
+    .img-container:nth-child(4)::after,
+    .img-container:nth-child(5)::after,
+    .img-container:nth-child(6)::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 80%;
+        opacity: 0;
+    }
+
+
+    .img-container:hover .exercise-images {
+        transform: scale(1.1);
+    }
+
+    .bmi {
+        margin: 0;
+    }
+
+    .heading-bmi {
+        padding: 0;
+    }
+
+
+    .sub-bmi {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .section-chart {
+        padding: 1rem;
+    }
+
+    .chart-container {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .bmi-table {
+        width: 100%;
+        max-width: 800px;
+        background-color: #444444;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+
+    .table-heading {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    table {
+        margin-left: 0;
+        display: inline-block;
+
+    }
+
+
+    .bmi-table th,
+    .bmi-table td {
+        padding: 10px;
+    }
+
+    .bmi-calculator {
+        padding: 1rem;
+    }
+
+    .calculator-sub {
+        padding: 1rem 0;
+    }
+
+
+
+    .section-team {
+        padding: 2rem;
+    }
+
+    .team-heading,
+    .team-sub {
+        padding: 0.5rem 0;
+    }
+
+
+    .team-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 800px;
+    }
+
+
+
+    .footer {
+        background-color: #111111;
+        padding: 2rem;
+        color: white;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer-container {
+        display: inline;
+        margin: 0;
+    }
+
+
+    .title {
+        padding: 1rem;
+    }
+
+    .subtitle {
+        padding: 1rem;
+    }
+
+
+    .get-started {
+
+        padding: 1rem;
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .services {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1.9rem;
+        margin-left: 0rem;
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-text {
+        margin: 0;
+        font-size: 14px;
+    }
 
 
 
 }
 
-/* Medium devices (tablets) */
-/* @media (min-width: 601px) and (max-width: 1024px) {} */
-*/
+@media only screen and (min-width:654px) and (max-width: 700px) {
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 1rem;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .hamburger .bar {
+        z-index: 1;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    .overlay {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+
+    }
+
+
+    .logo p {
+        margin-left: 0rem;
+    }
+
+
+
+
+    .navbar-items ul {
+        flex-direction: column;
+        height: 100vh;
+        line-height: 0;
+        align-items: center;
+        justify-content: space-around;
+        position: static;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        margin-left: 10rem;
+        padding-top: 3rem;
+        z-index: 1;
+    }
+
+    .item {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container {
+        display: inline-block;
+        padding: 1rem;
+        position: relative;
+
+    }
+
+    .hero {
+        position: static;
+        width: 60%;
+        font-size: 3rem;
+        max-width: 600px;
+        font-weight: 800;
+    }
+
+    .sub-title {
+        width: 80%;
+        position: static;
+        max-width: 800px;
+        margin-left: 1rem;
+    }
+
+
+    .btn-items {
+        position: static;
+        width: 70dvh;
+        height: 18dvh;
+        max-width: 500px;
+    }
+
+    .join,
+    .download {
+        padding: 15px 26px;
+    }
+
+    .header-imge {
+        max-width: 100%;
+        width: 80dvh;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        align-items: center;
+        height: 90dvh;
+
+    }
+
+    .banner-img {
+        object-fit: cover;
+        margin-top: 5rem;
+    }
+
+    .content-wrapper {
+
+        position: relative;
+
+    }
+
+    .tutorial,
+    .workout {
+        margin-right: 2rem;
+        width: 35dvh;
+        position: absolute;
+        left: 0;
+    }
+
+    .tutorial {
+        top: -250px;
+        left: 5%;
+    }
+
+    .workout {
+        top: -545px;
+        left: 47%;
+    }
+
+    .container::after {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 20px auto;
+        position: absolute;
+        top: 155%;
+        left: 12dvh;
+    }
+
+    .main-title {
+        padding-top: 0.5rem;
+        max-width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .sub {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .box {
+        flex: 1 1 100%;
+        max-width: 300px;
+        border-radius: 8px;
+    }
+
+    .box img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .section-benefits,
+    .section-training {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantage {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 3rem;
+    }
+
+    .advantage-heading h2 {
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .advantage-sub {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .advantage-image {
+        width: 100%;
+        max-width: 800px;
+
+    }
+
+    .running {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .section-training {
+        display: block;
+        padding: 1rem;
+    }
+
+    .heading-training {
+        font-size: 2rem;
+    }
+
+
+
+
+    .training-image {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+        gap: 1rem;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .img-container {
+        width: 100%;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        flex: 1 1 100%;
+    }
+
+    .exercise-images {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+
+
+
+    .img-container:nth-child(1)::after,
+    .img-container:nth-child(2)::after,
+    .img-container:nth-child(3)::after,
+    .img-container:nth-child(4)::after,
+    .img-container:nth-child(5)::after,
+    .img-container:nth-child(6)::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 80%;
+        opacity: 0;
+    }
+
+
+    .img-container:hover .exercise-images {
+        transform: scale(1.1);
+    }
+
+    .bmi {
+        margin: 0;
+    }
+
+    .heading-bmi {
+        padding: 0;
+    }
+
+
+    .sub-bmi {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .section-chart {
+        padding: 1rem;
+    }
+
+    .chart-container {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .bmi-table {
+        width: 100%;
+        max-width: 800px;
+        background-color: #444444;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+
+    .table-heading {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    table {
+        margin-left: 0;
+        display: inline-block;
+
+    }
+
+
+    .bmi-table th,
+    .bmi-table td {
+        padding: 10px;
+    }
+
+    .bmi-calculator {
+        padding: 1rem;
+    }
+
+    .calculator-sub {
+        padding: 1rem 0;
+    }
+
+
+
+    .section-team {
+        padding: 2rem;
+    }
+
+    .team-heading,
+    .team-sub {
+        padding: 0.5rem 0;
+    }
+
+
+    .team-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 800px;
+    }
+
+
+
+    .footer {
+        background-color: #111111;
+        padding: 2rem;
+        color: white;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer-container {
+        display: inline;
+        margin: 0;
+    }
+
+
+    .title {
+        padding: 1rem;
+    }
+
+    .subtitle {
+        padding: 1rem;
+    }
+
+
+    .get-started {
+
+        padding: 1rem;
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .services {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1.9rem;
+        margin-left: 0rem;
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-text {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:701px) and (max-width: 767px) {
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 1rem;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .hamburger .bar {
+        z-index: 1;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    .overlay {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+
+    }
+
+
+    .logo p {
+        margin-left: 0rem;
+    }
+
+
+
+
+    .navbar-items ul {
+        flex-direction: column;
+        height: 100vh;
+        line-height: 0;
+        align-items: center;
+        justify-content: space-around;
+        position: static;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        margin-left: 10rem;
+        padding-top: 3rem;
+        z-index: 1;
+    }
+
+    .item {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container {
+        display: inline-block;
+        padding: 1rem;
+        position: relative;
+
+    }
+
+    .hero {
+        position: static;
+        width: 60%;
+        font-size: 3rem;
+        max-width: 600px;
+        font-weight: 800;
+    }
+
+    .sub-title {
+        width: 80%;
+        position: static;
+        max-width: 800px;
+        margin-left: 1rem;
+    }
+
+
+    .btn-items {
+        position: static;
+        width: 70dvh;
+        height: 18dvh;
+        max-width: 500px;
+    }
+
+    .join,
+    .download {
+        padding: 15px 26px;
+    }
+
+    .header-imge {
+        max-width: 100%;
+        width: 80dvh;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        align-items: center;
+        height: 90dvh;
+
+    }
+
+    .banner-img {
+        object-fit: cover;
+        margin-top: 5rem;
+    }
+
+    .content-wrapper {
+
+        position: relative;
+
+    }
+
+    .tutorial,
+    .workout {
+        margin-right: 2rem;
+        width: 35dvh;
+        position: absolute;
+        left: 0;
+    }
+
+    .tutorial {
+        top: -250px;
+        left: 10%;
+    }
+
+    .workout {
+        top: -545px;
+        left: 47%;
+    }
+
+    .container::after {
+        width: 45px;
+        height: 45px;
+        display: block;
+        margin: 20px auto;
+        position: absolute;
+        top: 146dvh;
+        left: 19dvh;
+    }
+
+    .main-title {
+        padding-top: 0.5rem;
+        max-width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .sub {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .box {
+        flex: 1 1 100%;
+        max-width: 300px;
+        border-radius: 8px;
+    }
+
+    .box img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .section-benefits,
+    .section-training {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantage {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 3rem;
+    }
+
+    .advantage-heading h2 {
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .advantage-sub {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .advantage-image {
+        width: 100%;
+        max-width: 800px;
+
+    }
+
+    .running {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .section-training {
+        display: block;
+        padding: 1rem;
+    }
+
+    .heading-training {
+        font-size: 2rem;
+    }
+
+
+
+
+    .training-image {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+        gap: 1rem;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .img-container {
+        width: 100%;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        flex: 1 1 100%;
+    }
+
+    .exercise-images {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+
+
+
+    .img-container:nth-child(1)::after,
+    .img-container:nth-child(2)::after,
+    .img-container:nth-child(3)::after,
+    .img-container:nth-child(4)::after,
+    .img-container:nth-child(5)::after,
+    .img-container:nth-child(6)::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 80%;
+        opacity: 0;
+    }
+
+
+    .img-container:hover .exercise-images {
+        transform: scale(1.1);
+    }
+
+    .bmi {
+        margin: 0;
+    }
+
+    .heading-bmi {
+        padding: 0;
+    }
+
+
+    .sub-bmi {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .section-chart {
+        padding: 1rem;
+    }
+
+    .chart-container {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .bmi-table {
+        width: 100%;
+        max-width: 800px;
+        background-color: #444444;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+
+    .table-heading {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    table {
+        margin-left: 0;
+        display: inline-block;
+
+    }
+
+
+    .bmi-table th,
+    .bmi-table td {
+        padding: 10px;
+    }
+
+    .bmi-calculator {
+        padding: 1rem;
+    }
+
+    .calculator-sub {
+        padding: 1rem 0;
+    }
+
+
+
+    .section-team {
+        padding: 2rem;
+    }
+
+    .team-heading,
+    .team-sub {
+        padding: 0.5rem 0;
+    }
+
+
+    .team-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 800px;
+    }
+
+
+
+    .footer {
+        background-color: #111111;
+        padding: 2rem;
+        color: white;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer-container {
+        display: inline;
+        margin: 0;
+    }
+
+
+    .title {
+        padding: 1rem;
+    }
+
+    .subtitle {
+        padding: 1rem;
+    }
+
+
+    .get-started {
+
+        padding: 1rem;
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .services {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1.9rem;
+        margin-left: 0rem;
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-text {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:768px) and (max-width: 831px) {
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .navbar {
+        width: 100%;
+        background-color: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+        padding: 2px 0 16px 2px;
+    }
+
+
+    .navbar-items ul {
+        width: 49dvw;
+        list-style: none;
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 200;
+        line-height: 21.6px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+        left: 50%;
+        background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+        border-radius: 20rem;
+        border: 1px solid rgba(121, 121, 121, 0.849);
+    }
+
+    .item {
+        cursor: pointer;
+        padding: 0.5rem;
+        width: 21%;
+        text-align: center;
+        margin: 0.2rem;
+    }
+
+    .item:hover {
+        background-color: #E6533C;
+        border-radius: 46px;
+        text-align: center;
+    }
+
+
+    .container {
+        display: inline-block;
+        padding: 1rem;
+        position: relative;
+
+    }
+
+
+
+
+
+    .hero {
+        position: static;
+        width: 45%;
+        font-size: 4rem;
+        max-width: 600px;
+        font-weight: 800;
+        margin-left: 6rem;
+        margin-top: 3rem;
+    }
+
+    .sub-title {
+        width: 80%;
+        position: static;
+        max-width: 800px;
+        margin-left: 6.5rem;
+    }
+
+
+    .btn-items {
+        position: static;
+        width: 105dvh;
+        height: 18dvh;
+        max-width: 800px;
+    }
+
+    .join,
+    .download {
+        padding: 15px 26px;
+    }
+
+    .header-imge {
+        max-width: 100%;
+        width: 80dvh;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        align-items: center;
+        height: 90dvh;
+
+    }
+
+    .banner-img {
+        object-fit: cover;
+        margin-top: 5rem;
+    }
+
+    .content-wrapper {
+
+        position: relative;
+
+    }
+
+    .tutorial,
+    .workout {
+        margin-right: 2rem;
+        width: 35dvh;
+        position: absolute;
+        left: 0;
+    }
+
+    .tutorial {
+        top: -250px;
+        left: 20%;
+    }
+
+    .workout {
+        top: -545px;
+        left: 47%;
+    }
+
+    .container::after {
+        width: 45px;
+        height: 45px;
+        display: block;
+        margin: 20px auto;
+        position: absolute;
+        top: 204%;
+        left: 23%;
+    }
+
+    .main-title {
+        padding-top: 0.5rem;
+        max-width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .sub {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .box {
+        flex: 1 1 100%;
+        max-width: 300px;
+        border-radius: 8px;
+    }
+
+    .box img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .section-benefits,
+    .section-training {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantage {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 3rem;
+    }
+
+    .advantage-heading h2 {
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .advantage-sub {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .advantage-image {
+        width: 100%;
+        max-width: 800px;
+
+    }
+
+    .running {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .section-training {
+        display: block;
+        padding: 1rem;
+    }
+
+    .heading-training {
+        font-size: 2rem;
+    }
+
+
+
+
+    .training-image {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+        gap: 1rem;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .img-container {
+        width: 100%;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        flex: 1 1 100%;
+    }
+
+    .exercise-images {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+
+
+
+    .img-container:nth-child(1)::after,
+    .img-container:nth-child(2)::after,
+    .img-container:nth-child(3)::after,
+    .img-container:nth-child(4)::after,
+    .img-container:nth-child(5)::after,
+    .img-container:nth-child(6)::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 80%;
+        opacity: 0;
+    }
+
+
+    .img-container:hover .exercise-images {
+        transform: scale(1.1);
+    }
+
+    .bmi {
+        margin: 0;
+    }
+
+    .heading-bmi {
+        padding: 0;
+    }
+
+
+    .sub-bmi {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .section-chart {
+        padding: 1rem;
+    }
+
+    .chart-container {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .bmi-table {
+        width: 100%;
+        max-width: 800px;
+        background-color: #444444;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+
+    .table-heading {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    table {
+        margin-left: 0;
+        display: inline-block;
+
+    }
+
+
+    .bmi-table th,
+    .bmi-table td {
+        padding: 10px;
+    }
+
+    .bmi-calculator {
+        padding: 1rem;
+    }
+
+    .calculator-sub {
+        padding: 1rem 0;
+    }
+
+
+
+    .section-team {
+        padding: 2rem;
+    }
+
+    .team-heading,
+    .team-sub {
+        padding: 0.5rem 0;
+    }
+
+
+    .team-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 800px;
+    }
+
+
+
+    .footer {
+        background-color: #111111;
+        padding: 2rem;
+        color: white;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer-container {
+        display: inline;
+        margin: 0;
+    }
+
+
+    .title {
+        padding: 1rem;
+    }
+
+    .subtitle {
+        padding: 1rem;
+    }
+
+
+    .get-started {
+
+        padding: 1rem;
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .services {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1.9rem;
+        margin-left: 0rem;
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-text {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:832px) and (max-width: 990px) {
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .navbar {
+        width: 100%;
+        background-color: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+        padding: 2px 0 16px 2px;
+    }
+
+
+    .navbar-items ul {
+        width: 49dvw;
+        list-style: none;
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 200;
+        line-height: 21.6px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+        left: 50%;
+        background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+        border-radius: 20rem;
+        border: 1px solid rgba(121, 121, 121, 0.849);
+    }
+
+    .item {
+        cursor: pointer;
+        padding: 0.5rem;
+        width: 21%;
+        text-align: center;
+        margin: 0.2rem;
+    }
+
+    .item:hover {
+        background-color: #E6533C;
+        border-radius: 46px;
+        text-align: center;
+    }
+
+
+    .container {
+        display: inline-block;
+        padding: 1rem;
+        position: relative;
+
+    }
+
+
+
+
+
+    .hero {
+        position: static;
+        width: 45%;
+        font-size: 4rem;
+        max-width: 600px;
+        font-weight: 800;
+        margin-left: 6rem;
+        margin-top: 3rem;
+    }
+
+    .sub-title {
+        width: 80%;
+        position: static;
+        max-width: 800px;
+        margin-left: 6.5rem;
+    }
+
+
+    .btn-items {
+        position: static;
+        width: 105dvh;
+        height: 18dvh;
+        max-width: 800px;
+    }
+
+    .join,
+    .download {
+        padding: 15px 26px;
+    }
+
+    .header-imge {
+        max-width: 100%;
+        width: 80dvh;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        align-items: center;
+        height: 90dvh;
+
+    }
+
+    .banner-img {
+        object-fit: cover;
+        margin-top: 5rem;
+    }
+
+    .content-wrapper {
+
+        position: relative;
+
+    }
+
+    .tutorial,
+    .workout {
+        margin-right: 2rem;
+        width: 35dvh;
+        position: absolute;
+        left: 0;
+    }
+
+    .tutorial {
+        top: -250px;
+        left: 20%;
+    }
+
+    .workout {
+        top: -545px;
+        left: 47%;
+    }
+
+    .container::after {
+        width: 45px;
+        height: 45px;
+        display: block;
+        margin: 20px auto;
+        position: absolute;
+        top: 189%;
+        left: 23.4%;
+    }
+
+    .main-title {
+        padding-top: 0.5rem;
+        max-width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .sub {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .box {
+        flex: 1 1 100%;
+        max-width: 350px;
+        border-radius: 8px;
+    }
+
+    .box img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .section-benefits,
+    .section-training {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantage {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 3rem;
+    }
+
+    .advantage-heading h2 {
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .advantage-sub {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .advantage-image {
+        width: 100%;
+        max-width: 800px;
+
+    }
+
+    .running {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .section-training {
+        display: block;
+        padding: 1rem;
+    }
+
+    .heading-training {
+        font-size: 2rem;
+    }
+
+
+
+
+    .training-image {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+        gap: 1rem;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .img-container {
+        width: 100%;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        flex: 1 1 100%;
+    }
+
+    .exercise-images {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+
+
+
+    .img-container:nth-child(1)::after,
+    .img-container:nth-child(2)::after,
+    .img-container:nth-child(3)::after,
+    .img-container:nth-child(4)::after,
+    .img-container:nth-child(5)::after,
+    .img-container:nth-child(6)::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 80%;
+        opacity: 0;
+    }
+
+
+    .img-container:hover .exercise-images {
+        transform: scale(1.1);
+    }
+
+    .bmi {
+        margin: 0;
+    }
+
+    .heading-bmi {
+        padding: 0;
+    }
+
+
+    .sub-bmi {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .section-chart {
+        padding: 1rem;
+    }
+
+    .chart-container {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .bmi-table {
+        width: 100%;
+        max-width: 800px;
+        background-color: #444444;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+
+    .table-heading {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    table {
+        margin-left: 0;
+        display: inline-block;
+
+    }
+
+
+    .bmi-table th,
+    .bmi-table td {
+        padding: 10px;
+    }
+
+    .bmi-calculator {
+        padding: 1rem;
+    }
+
+    .calculator-sub {
+        padding: 1rem 0;
+    }
+
+
+
+    .section-team {
+        padding: 2rem;
+    }
+
+    .team-heading,
+    .team-sub {
+        padding: 0.5rem 0;
+    }
+
+
+    .team-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 800px;
+    }
+
+
+
+    .footer {
+        background-color: #111111;
+        padding: 2rem;
+        color: white;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer-container {
+        display: inline;
+        margin: 0;
+    }
+
+
+    .title {
+        padding: 1rem;
+    }
+
+    .subtitle {
+        padding: 1rem;
+    }
+
+
+    .get-started {
+
+        padding: 1rem;
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .services {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1.9rem;
+        margin-left: 0rem;
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-text {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:991px) and (max-width: 1024px) {
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .navbar {
+        width: 100%;
+        background-color: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+        padding: 2px 0 16px 2px;
+    }
+
+
+    .navbar-items ul {
+        width: 49dvw;
+        list-style: none;
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 200;
+        line-height: 21.6px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+        left: 50%;
+        background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+        border-radius: 20rem;
+        border: 1px solid rgba(121, 121, 121, 0.849);
+    }
+
+    .item {
+        cursor: pointer;
+        padding: 0.5rem;
+        width: 21%;
+        text-align: center;
+        margin: 0.2rem;
+    }
+
+    .item:hover {
+        background-color: #E6533C;
+        border-radius: 46px;
+        text-align: center;
+    }
+
+
+    .container {
+        display: inline-block;
+        padding: 1rem;
+        position: relative;
+
+    }
+
+
+
+
+
+    .hero {
+        position: static;
+        width: 45%;
+        font-size: 4rem;
+        max-width: 600px;
+        font-weight: 800;
+        margin-left: 6rem;
+        margin-top: 3rem;
+    }
+
+    .sub-title {
+        width: 80%;
+        position: static;
+        max-width: 800px;
+        margin-left: 6.5rem;
+    }
+
+
+    .btn-items {
+        position: static;
+        width: 105dvh;
+        height: 18dvh;
+        max-width: 800px;
+    }
+
+    .join,
+    .download {
+        padding: 15px 26px;
+    }
+
+    .header-imge {
+        max-width: 100%;
+        width: 80dvh;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        align-items: center;
+        height: 90dvh;
+
+    }
+
+    .banner-img {
+        object-fit: cover;
+        margin-top: 5rem;
+    }
+
+    .content-wrapper {
+
+        position: relative;
+
+    }
+
+    .tutorial,
+    .workout {
+        margin-right: 2rem;
+        width: 35dvh;
+        position: absolute;
+        left: 0;
+    }
+
+    .tutorial {
+        top: -250px;
+        left: 20%;
+    }
+
+    .workout {
+        top: -545px;
+        left: 45%;
+    }
+
+    .container::after {
+        width: 45px;
+        height: 45px;
+        display: block;
+        margin: 20px auto;
+        position: absolute;
+        top: 188%;
+        left: 24%;
+    }
+
+    .main-title {
+        padding-top: 0.5rem;
+        max-width: 100%;
+        font-size: 1.9rem;
+    }
+
+    .sub {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .box {
+        flex: 1 1 100%;
+        max-width: 350px;
+        border-radius: 8px;
+    }
+
+    .box img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .section-benefits,
+    .section-training {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advantage {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 3rem;
+    }
+
+    .advantage-heading h2 {
+        width: 100%;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .advantage-sub {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .advantage-image {
+        width: 100%;
+        max-width: 800px;
+
+    }
+
+    .running {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .section-training {
+        display: block;
+        padding: 1rem;
+    }
+
+    .heading-training {
+        font-size: 2rem;
+    }
+
+
+
+
+    .training-image {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+        gap: 1rem;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .img-container {
+        width: 100%;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        flex: 1 1 100%;
+    }
+
+    .exercise-images {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+
+
+
+    .img-container:nth-child(1)::after,
+    .img-container:nth-child(2)::after,
+    .img-container:nth-child(3)::after,
+    .img-container:nth-child(4)::after,
+    .img-container:nth-child(5)::after,
+    .img-container:nth-child(6)::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 80%;
+        opacity: 0;
+    }
+
+
+    .img-container:hover .exercise-images {
+        transform: scale(1.1);
+    }
+
+    .bmi {
+        margin: 0;
+    }
+
+    .heading-bmi {
+        padding: 0;
+    }
+
+
+    .sub-bmi {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .section-chart {
+        padding: 1rem;
+    }
+
+    .chart-container {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .bmi-table {
+        width: 100%;
+        max-width: 800px;
+        background-color: #444444;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+
+    .table-heading {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    table {
+        margin-left: 0;
+        display: inline-block;
+
+    }
+
+
+    .bmi-table th,
+    .bmi-table td {
+        padding: 10px;
+    }
+
+    .bmi-calculator {
+        padding: 1rem;
+    }
+
+    .calculator-sub {
+        padding: 1rem 0;
+    }
+
+
+
+    .section-team {
+        padding: 2rem;
+    }
+
+    .team-heading,
+    .team-sub {
+        padding: 0.5rem 0;
+    }
+
+
+    .team-container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 800px;
+    }
+
+
+
+    .footer {
+        background-color: #111111;
+        padding: 2rem;
+        color: white;
+    }
+
+    .about {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer-container {
+        display: inline;
+        margin: 0;
+    }
+
+
+    .title {
+        padding: 1rem;
+    }
+
+    .subtitle {
+        padding: 1rem;
+    }
+
+
+    .get-started {
+
+        padding: 1rem;
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .services {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1.9rem;
+        margin-left: 0rem;
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-text {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+
+}
