@@ -829,3 +829,18 @@ hr {
     text-align: center;
     padding: 1.2rem;
 }
+
+
+#result {
+    font-family: "Inter";
+    font-size: 1rem;
+
+    font-weight: 800;
+}
+
+#bmiResult,
+#bmiStatus {
+    padding: 1rem;
+    color: rgb(4, 117, 255);
+    word-spacing: 0.1rem;
+}

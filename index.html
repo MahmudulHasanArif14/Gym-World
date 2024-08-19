@@ -294,10 +294,10 @@
                     </p>
 
 
-                    <form action="#" class="user-inputs">
+                    <form class="user-inputs" id="bmiForm">
 
-                        <input type="number" name="height" id="height" placeholder="Height/Cm">
-                        <input type="number" name="Weight" id="Weight" placeholder="Weight/Kg">
+                        <input type="number" name="height" id="height" placeholder="Height/m" step="0.01">
+                        <input type="number" name="Weight" id="Weight" placeholder="Weight/Kg" step="0.01">
 
                         <input type="number" name="age" id="age" placeholder="Age">
                         <select name="Gender" id="Gender" selected>
@@ -318,9 +318,12 @@
 
 
                         <button class="join calculate">Calculate</button>
-
-
                     </form>
+
+                    <div id="result">
+                        <p id="bmiResult">Your BMI is 0</p>
+                        <p id="bmiStatus">Your BMR is 0</p>
+                    </div>
 
 
                 </div>
