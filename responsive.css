@@ -6,9 +6,6 @@
         max-width: 400px;
     }
 
-
-
-
     .hamburger {
         display: flex;
         justify-content: flex-end;
@@ -65,7 +62,7 @@
         border: none;
         border-radius: 0;
         background: transparent;
-        margin-left: 10rem;
+        margin-left: 7rem;
         padding-top: 3rem;
         z-index: 1;
     }
@@ -434,9 +431,6 @@
         max-width: 400px;
     }
 
-
-
-
     .hamburger {
         display: flex;
         justify-content: flex-end;
@@ -493,7 +487,7 @@
         border: none;
         border-radius: 0;
         background: transparent;
-        margin-left: 10rem;
+        margin-left: 8rem;
         padding-top: 3rem;
         z-index: 1;
     }

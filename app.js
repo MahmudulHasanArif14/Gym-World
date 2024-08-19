@@ -1,14 +1,9 @@
-
 let hamburger=document.querySelector('.hamburger');
 
-let navitems=document.querySelector(".navbar-items");
+let navitems=document.querySelectorAll(".navbar-items");
 
 let overlay=document.querySelector(".overlay");
 
-// hamburger.addEventListener('click', function () {
-//     navitems.classList.toggle('active');
-
-// });
 
 hamburger.addEventListener("click", function() {
     overlay.classList.toggle('overlay');
@@ -16,8 +11,8 @@ hamburger.addEventListener("click", function() {
 
 const navItems = document.querySelectorAll(".nav-item");
 
-navItems.forEach(item => {
-    item.addEventListener("click", function() {
-        document.getElementById("overlay").style.display = "none";
+navitems.forEach((item)=>{
+    item.addEventListener("click",()=>{
+        overlay.classList.toggle('overlay');
     });
 });
